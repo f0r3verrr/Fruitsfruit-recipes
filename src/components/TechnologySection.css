@@ -1,0 +1,159 @@
+.technology-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #0f0f0f 0%, #0a0a0a 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.technology-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.technology-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.technology-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.title-divider-small {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  margin: 0 auto 3rem;
+}
+
+.technology-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.9;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.technology-description > p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.technology-description h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 3rem 0 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.technology-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.technology-benefits li {
+  padding: 1rem 0 1rem 2rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: padding-left 0.3s ease;
+}
+
+.technology-benefits li:last-child {
+  border-bottom: none;
+}
+
+.technology-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.technology-benefits li strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.technology-process {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: step-counter;
+}
+
+.technology-process li {
+  padding: 1rem 0 1rem 3rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  counter-increment: step-counter;
+}
+
+.technology-process li:last-child {
+  border-bottom: none;
+}
+
+.technology-process li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .technology-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .technology-title {
+    font-size: 2.2rem;
+  }
+
+  .technology-description {
+    font-size: 1rem;
+  }
+
+  .technology-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .technology-benefits li,
+  .technology-process li {
+    padding-left: 1.5rem;
+  }
+
+  .technology-process li::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+

@@ -94,6 +94,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-text">
+              <p className="footer-company">ООО "ТРИУМФАТОРЫ"</p>
               <p className="footer-inn">ИНН: 5190101483</p>
               <p className="footer-support">
                 Проект выполнен при поддержке Фонда содействия инновациям в рамках программы

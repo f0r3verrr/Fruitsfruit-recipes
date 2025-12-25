@@ -97,6 +97,7 @@ function App() {
               <p className="footer-company">ООО "ТРИУМФАТОРЫ"</p>
               <p className="footer-address">Юр. адрес: г. Мурманск, ул. Подстаницкого, д. 1, этаж 2 офис 213</p>
               <p className="footer-inn">ИНН: 5190101483</p>
+              <p className="footer-email">Email: triumfatory@mail.ru</p>
               <p className="footer-support">
                 Проект выполнен при поддержке Фонда содействия инновациям в рамках программы
                 «Студенческий стартап» федерального проекта «Платформа университетского
